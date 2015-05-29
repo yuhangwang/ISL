@@ -17,7 +17,7 @@ The binary/ folder contains both a tar.gz file and a folder, which are equivalen
 * Compiler: gcc version 4.4.7 20120313 (Red Hat 4.4.7-11)
 
 ### Compilation steps
-**Version: 0.11.1** 
+#### Version: 0.11.1
 ```bash
 wget ftp://gcc.gnu.org/pub/gcc/infrastructure/isl-0.11.1.tar.bz2
 tar xvf isl-0.11.1.tar.bz2
@@ -28,7 +28,7 @@ make -j10
 make check | tee QualityVerification.txt
 make install
 ```
-**Version: 0.12.2**
+#### Version: 0.12.2
 ```bash
 wget ftp://gcc.gnu.org/pub/gcc/infrastructure/isl-0.12.2.tar.bz2
 tar xvf isl-0.12.2.tar.bz2
