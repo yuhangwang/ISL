@@ -14,5 +14,5 @@ Name: isl
 Description: isl Library
 Version: 0.12.2
 Requires: 
-Libs: -L${libdir}  -lisl -lgmp
-Cflags: -I${includedir} 
+Libs: -L${libdir} -L/Scr/scr-test-steven/install/libgmp/4.3.2/lib -lisl -lgmp
+Cflags: -I${includedir} -I/Scr/scr-test-steven/install/libgmp/4.3.2/include

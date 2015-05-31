@@ -18,7 +18,7 @@ The binary/ folder contains both a tar.gz file and a folder, which are equivalen
 
 ### Compilation steps
 #### Version: 0.11.1
-**(with GMP-4.3.2)
+**(with GMP-4.3.2)**
 ```bash
 wget ftp://gcc.gnu.org/pub/gcc/infrastructure/isl-0.11.1.tar.bz2
 tar xvf isl-0.11.1.tar.bz2
@@ -30,12 +30,13 @@ make check | tee QualityVerification.txt
 make install
 ```
 #### Version: 0.12.2
+**(with GMP-4.3.2)**
 ```bash
 wget ftp://gcc.gnu.org/pub/gcc/infrastructure/isl-0.12.2.tar.bz2
 tar xvf isl-0.12.2.tar.bz2
 mkdir build_isl-0.12.2
 cd build_isl-0.12.2
-../isl-0.12.2/configure --prefix=/home/steven/install/isl/0.12.2
+../isl-0.12.2/configure --prefix=/home/steven/install/isl/0.12.2 -with-gmp=system --with-gmp-prefix=/home/steven/install/libgmp/4.3.2 --with-gmp-exec-prefix=/home/steven/install/libgmp/4.3.2 --enable-portable-binary=yes --enable-shared=yes --enable-static=yes
 make -j10
 make check | tee QualityVerification.txt
 make install
